@@ -1,0 +1,42 @@
+#formulario{
+    background-color: #FE5F55;
+    padding: 15px !important;
+}
+
+/* Quita la posibilidad de desmarcar las act descarga default */
+#divActDescarga > div:nth-child(1) > div > a:nth-child(3) > i,
+#divActDescarga > div:nth-child(1) > div > a:nth-child(4) > i{
+    display: none;
+}
+
+/* Estilos para quitar el apuntador que aparece en el selector multiple */
+.ui.dropdown>.dropdown.icon {
+    cursor: default;
+}
+
+.ui.dropdown input {
+    caret-color: transparent;
+}
+
+/* Estilos para el radio button */
+[type="radio"]:not(:checked)+span,
+[type="radio"]:checked+span {
+    margin: 5px;
+}
+
+/* Estilos para los label */
+.textLabel {
+    color: black !important;
+    font-size: 16px !important;
+    padding: 5px;
+}
+
+/* Estilos de validacion */
+.just-validate-error-label[data-tooltip=true]{
+    position: initial !important;
+}
+
+/* Estilos de span */
+[type="radio"]:not(:checked)+span, [type="radio"]:checked+span{
+    color: black;
+}
