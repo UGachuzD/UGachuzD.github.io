@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="semantic_ui/css/semantic.min.css">
     <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/botonesAdminProfesores.css">
     <link rel="stylesheet" href="css/resumen.css">
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="materialize/js/materialize.min.js"></script>
@@ -20,28 +21,25 @@
     <script src="js/formularioMaterias.js"></script>
     <script src="js/validacionFormulario.js"></script>
     <script src="js/tabVentana.js"></script>
-    <!-- <script src="js/headerFooter.js"></script> -->
-    <title>Encuesta</title>
+    <script src="js/tabAdmin.js"></script>
+    <title>Formulario profesores</title>
 </head>
 
 <body>
-    <header>
-    </header>
-
     <main>
         <div class="container">
-            <div class="row center-align">
-                <h1>Pidae 2</h1>
-            </div>
             <div class="row">
                 <div class="col s12">
-                    <ul class="tabs">
+                    <ul class="tabsAdministrador center-align tabs">
+                        <li class="tab col s4"><a class="waves-effect waves-red" href="#tabTabla">Tabla</a></li>
                         <li class="tab col s4"><a class="active waves-effect waves-red"
-                                href="#formulario">Formulario</a></li>
-                        <li class="tab col s4"><a class="waves-effect waves-green" href="#resumen">Resumen</a></li>
+                                href="#formulario">Profesores</a></li>
+                        <li class="tab col s4"><a class="waves-effect waves-red" href="#tabAcademia">Academias</a></li>
                     </ul>
                 </div>
-                <!-- FORMULARIO -->
+                <div id="tabTabla" class="col s12 z-depth-3">
+                    <p>Tabla</p>
+                </div>
                 <div id="formulario" class="col s12 z-depth-3">
                     <div class="row">
                         <div class="col s12 m12 l12 contenedorFormulario">
@@ -81,7 +79,8 @@
 
                                     </article>
                                     <div class="fields">
-                                        <label class="textLabel" for="actDescarga">¿Esta seguro con la seleccion de sus
+                                        <label class="textLabel" for="actDescarga">¿Esta seguro con
+                                            la seleccion de sus
                                             actividades de descarga?</label>
                                         <p>
                                             <label>
@@ -99,65 +98,29 @@
                                         </p>
                                     </div>
                                     <div class="fields">
-                                        <label class="textLabel" for="materiasmax">Total de horas: <label
-                                                class="textLabel" id="numHrs">0 hrs</label></label>
+                                        <label class="textLabel" for="materiasmax">Total de horas:
+                                            <label class="textLabel" id="numHrs">0
+                                                hrs</label></label>
                                     </div>
-                                </div>
-                                <div class="field">
-                                    <button type="submit" class="ui button fluid">Enviar encuesta</button>
                                 </div>
                             </form>
                         </div>
 
                     </div>
-                </div>
-                <!-- RESUMEN -->
-                <div id="resumen" class="col s12 z-depth-3">
-                    <div class="row">
-                        <div class="col s12 contenedorInfoProfe">
-                            <h3>Profesor: </h3>
-                            <h3>Departamento: </h3>
-                            <h3>Periodo: </h3>
-                        </div>
+                    <div class="row center-align">
+                        <a class="waves-effect waves-light btn"><i class="fa-solid fa-user-pen"></i>Modificar</a>
+                        <a class="waves-effect waves-light btn"><i class="fa-solid fa-user-xmark"></i>Eliminar</a>
+                        <a class="waves-effect waves-light btn"><i class="fa-regular fa-circle-left"></i>Regresar</a>
                     </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <div class="contenedorInfo">
-                                <div class="ui raised segment">
-                                    <a class="ui red ribbon label">MATERIAS</a>
-                                    <span>Detalles</span>
-                                    <p>Materia 1</p>
-                                    <p>Materia 2</p>
-                                    <p>Materia 3</p>
-                                    <p>Materia 4</p>
-                                    <p>Materia 5</p>
-                                    <a class="ui blue ribbon label">ACTIVIDADES DE DESCARGA</a>
-                                    <span>Detalles</span>
-                                    <p>Act 1</p>
-                                    <p>Act 2</p>
-                                    <p>Act 3</p>
-                                    <p>Act 4</p>
-                                    <p>Act 5</p>
-                                    <p>Total de horas: Cantidad</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="row">
-                            <div class="col s12">
-                                <div class="btnGenerarPDF">
-                                    <a class="waves-effect waves-light btn"><i class="fa-regular fa-file-pdf"></i>Generar PDF</a>
-                                </div>
-                            </div>
-                        </div>
                 </div>
-
+                <div id="tabAcademia" class="col s12 z-depth-3">
+                    <div class="row">
+                        <h6>Academia</h6>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
-    <!-- <footer class="page-footer">
-    </footer> -->
 </body>
 
 </html>

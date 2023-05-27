@@ -1,4 +1,28 @@
-#resumen{
+#resumen {
     background-color: #C7EFCF;
     padding: 15px !important;
+}
+
+.btnGenerarPDF, .contenedorInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.ui.raised.segment, .ui.raised.segments{
+    width: 80%;
+}
+
+.contenedorInfoProfe{
+    padding: 5px;
+    margin: 5px;
+}
+
+#resumen > div:nth-child(3) > div > div > a{
+    margin: 5px 10px;
+    min-width: 150px;
+}
+
+#resumen > div:nth-child(3) > div > div > a > i{
+    margin: 0 5px;
 }
