@@ -1,0 +1,8 @@
+.encabezado{
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    background-color: #0D3B66;
+    color : white;
+    padding: 15px;
+}
